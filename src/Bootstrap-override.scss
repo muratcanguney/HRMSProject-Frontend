@@ -1,0 +1,10 @@
+$primary: rgb(60, 81, 189);
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+@import '~bootstrap/scss/bootstrap.scss';
