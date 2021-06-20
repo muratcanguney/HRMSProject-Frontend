@@ -6,5 +6,18 @@ $primary: rgb(60, 81, 189);
     height: 40px;
     border-radius: 50%;
   }
+
+  .formError {
+    color: red;
+    text-align: left
+  }
+
+  .navbarHrms {
+    background-color: #E8E8E8;
+  }
+
+  .JobPostingAdd {
+background-image: url("https://res.cloudinary.com/dvjxaboh2/image/upload/v1623974517/jobsearchnewspaper_0_0_efi0ew.jpg")
+  }
   
 @import '~bootstrap/scss/bootstrap.scss';

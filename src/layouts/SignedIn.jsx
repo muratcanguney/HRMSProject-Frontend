@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt, faClipboardList, faIdCardAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function SignedIn(props) {
   return (
@@ -11,12 +13,12 @@ export default function SignedIn(props) {
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Murat Güney
         </a>
-        <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-          <li><a className="dropdown-item" href="#">Bilgilerim</a></li>
+        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a className="dropdown-item" href="#"><FontAwesomeIcon icon={faIdCardAlt} className="me-2" size="lg" />Bilgilerim</a></li>
           <li><hr className="dropdown-divider"></hr></li>
-          <li><a className="dropdown-item" href="#">Başvurulan İlanlar</a></li>
+          <li><a className="dropdown-item" href="#"><FontAwesomeIcon icon={faClipboardList} className="me-2" size="lg" />Başvurulan İlanlar</a></li>
           <li><hr className="dropdown-divider"></hr></li>
-          <li><a className="dropdown-item" onClick={props.signOut} href="#">Çıkış</a></li>
+          <li><a className="dropdown-item" onClick={props.signOut} href="#"><FontAwesomeIcon icon={faSignOutAlt} className="me-2" size="lg" />Çıkış</a></li>
         </ul>
       </li>
     </ul>
